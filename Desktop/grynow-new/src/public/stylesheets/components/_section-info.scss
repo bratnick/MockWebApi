@@ -1,0 +1,129 @@
+.section-info {
+  background-color: #f2f2f2;
+  padding: 10rem 0;
+  box-shadow: 0 0.1rem 0.3rem rgba(black, 0.4);
+}
+
+.info-content {
+  color: $grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.info-pics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__photo {
+    object-fit: cover;
+    box-shadow: 0 1.5rem 4rem rgba(black, 0.4);
+    border-radius: 50%;
+    transition: all 0.2s;
+    z-index: 1;
+
+    &--p1 {
+      transform: translateX(3.5rem);
+      width: 15rem;
+      height: 15rem;
+
+      &-alt {
+        transform: translateX(-3.5rem);
+      }
+    }
+
+    &--p2 {
+      width: 18rem;
+      height: 18rem;
+    }
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.picFadeInLeft {
+  animation: picFadeInLeft 1.5s ease-out;
+}
+
+@keyframes picFadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(3.5rem);
+  }
+}
+
+.picFadeInRight {
+  animation: picFadeInRight 1.5s ease-out;
+}
+
+@keyframes picFadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-3.5rem);
+  }
+}
+
+.info-abt {
+  padding: 2rem;
+  padding-left: 10rem;
+  border: 0.1rem solid rgba(black, 0.4);
+  border-radius: 0.3rem;
+  transform: translateX(-5rem);
+
+  &__alt {
+    padding: 2rem;
+    padding-right: 10rem;
+    transform: translateX(5rem);
+  }
+}
+
+.conFadeInLeft {
+  animation: conFadeInLeft 1.5s ease-out;
+}
+
+@keyframes conFadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-5rem);
+  }
+}
+
+.conFadeInRight {
+  animation: conFadeInRight 1.5s ease-out;
+}
+
+@keyframes conFadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(5rem);
+  }
+}

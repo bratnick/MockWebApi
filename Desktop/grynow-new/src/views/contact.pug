@@ -1,0 +1,120 @@
+extends base
+
+block links
+	title GRYNOW - CONTACT US
+	link(rel='stylesheet' type='text/css' href='/stylesheets/contact.css')
+	script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+
+block body
+	#app
+		.header_full
+			include header
+			.header-content
+				.header-content--title CONTACT US
+				.header-content--subtitle
+					| Learn everything related to influence marketing
+			.more-da 
+				a(href="#")
+					svg.icon-da(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 284.929 284.929")
+						path(d="M282.082,76.511l-14.274-14.273c-1.902-1.906-4.093-2.856-6.57-2.856c-2.471,0-4.661,0.95-6.563,2.856L142.466,174.441   L30.262,62.241c-1.903-1.906-4.093-2.856-6.567-2.856c-2.475,0-4.665,0.95-6.567,2.856L2.856,76.515C0.95,78.417,0,80.607,0,83.082   c0,2.473,0.953,4.663,2.856,6.565l133.043,133.046c1.902,1.903,4.093,2.854,6.567,2.854s4.661-0.951,6.562-2.854L282.082,89.647   c1.902-1.903,2.847-4.093,2.847-6.565C284.929,80.607,283.984,78.417,282.082,76.511z", fill="#ffffff")
+		.section-inquiry
+			.content-container
+				.inquiry--title Reasons For Inquiry
+				.inquiry--content
+					.inquiry--card
+						.inquiry--card-title Get Started
+						.inquiry--card-icon
+							img.icon-inquiry(src='./images/started.png', alt='started')
+						.inquiry--card-content Join our Community, and make profits
+						.inquiry--card-button 
+							a(href="#") Request Demo
+								svg.icon-ra(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 284.935 284.936")
+									path(d="M222.701,135.9L89.652,2.857C87.748,0.955,85.557,0,83.084,0c-2.474,0-4.664,0.955-6.567,2.857L62.244,17.133   c-1.906,1.903-2.855,4.089-2.855,6.567c0,2.478,0.949,4.664,2.855,6.567l112.204,112.204L62.244,254.677   c-1.906,1.903-2.855,4.093-2.855,6.564c0,2.477,0.949,4.667,2.855,6.57l14.274,14.271c1.903,1.905,4.093,2.854,6.567,2.854   c2.473,0,4.663-0.951,6.567-2.854l133.042-133.044c1.902-1.902,2.854-4.093,2.854-6.567S224.603,137.807,222.701,135.9z", fill="#a536dd")
+					.inquiry--card
+						.inquiry--card-title Sales Inquiry
+						.inquiry--card-icon
+							img.icon-inquiry(src='./images/info.png', alt='info')
+						.inquiry--card-content Get to know our offers and talk directly to our sales person
+						.inquiry--card-button 
+							a(href="#") Sales Inquiry
+								svg.icon-ra(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 284.935 284.936")
+									path(d="M222.701,135.9L89.652,2.857C87.748,0.955,85.557,0,83.084,0c-2.474,0-4.664,0.955-6.567,2.857L62.244,17.133   c-1.906,1.903-2.855,4.089-2.855,6.567c0,2.478,0.949,4.664,2.855,6.567l112.204,112.204L62.244,254.677   c-1.906,1.903-2.855,4.093-2.855,6.564c0,2.477,0.949,4.667,2.855,6.57l14.274,14.271c1.903,1.905,4.093,2.854,6.567,2.854   c2.473,0,4.663-0.951,6.567-2.854l133.042-133.044c1.902-1.902,2.854-4.093,2.854-6.567S224.603,137.807,222.701,135.9z", fill="#a536dd")
+					.inquiry--card
+						.inquiry--card-title Customer Support
+						.inquiry--card-icon
+							img.icon-inquiry(src='./images/support.png', alt='support')
+						.inquiry--card-content Have a Problem? Inquire with our Customer Support
+						.inquiry--card-button 
+							a(href="#") Customer Support
+								svg.icon-ra(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 284.935 284.936")
+									path(d="M222.701,135.9L89.652,2.857C87.748,0.955,85.557,0,83.084,0c-2.474,0-4.664,0.955-6.567,2.857L62.244,17.133   c-1.906,1.903-2.855,4.089-2.855,6.567c0,2.478,0.949,4.664,2.855,6.567l112.204,112.204L62.244,254.677   c-1.906,1.903-2.855,4.093-2.855,6.564c0,2.477,0.949,4.667,2.855,6.57l14.274,14.271c1.903,1.905,4.093,2.854,6.567,2.854   c2.473,0,4.663-0.951,6.567-2.854l133.042-133.044c1.902-1.902,2.854-4.093,2.854-6.567S224.603,137.807,222.701,135.9z", fill="#a536dd")
+		.section-contact_details
+			//- .content-container.contact
+			//- 	.contact--title Contact Details
+			//- 	.contact--item Phone No: +91 9654089096
+			//- 	.contact--item Email: info@grynow.com
+			.content-container.contact
+				h3.block-title Contact Us
+				.block-content
+					.form-data
+						form#contactForm.form(data-toggle='validator')
+							.input-group__item
+								input#name.text-input(type='text' name='Name' autocomplete='off' required='' data-error='Please enter your name' placeholder='Your Name')
+								.form__error.err_name.hide Please Enter Name
+							.input-group__item
+								input#email.text-input(type='email' name='email' autocomplete='off' required='' data-error='Please enter your email' placeholder='Your Email')
+								.form__error.err_email.hide Please Enter Valid Email Id
+							.input-group__item
+								textarea#message.textarea(rows='10' name='Message' required='' data-error='Please enter your message subject' placeholder='Your Message')
+								.form__error.err_msg.hide Please Enter Message
+							.input-group__item
+								button#submit.btn.selected(type='submit') Send Message
+								#msgSubmit.h3.text-center(hidden='')
+					.contact-data
+						.contact-content
+							.contact-icon
+								svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 97.713 97.713")
+									path(d="M48.855,0C29.021,0,12.883,16.138,12.883,35.974c0,5.174,1.059,10.114,3.146,14.684   c8.994,19.681,26.238,40.46,31.31,46.359c0.38,0.441,0.934,0.695,1.517,0.695s1.137-0.254,1.517-0.695   c5.07-5.898,22.314-26.676,31.311-46.359c2.088-4.57,3.146-9.51,3.146-14.684C84.828,16.138,68.69,0,48.855,0z M48.855,54.659", fill="#727272")
+							.contact-details
+								h5.contact-details__title Address
+								p VIT University, Vellore, Tamil Nadu - 632014
+						.contact-content
+							.contact-icon
+								svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 512 512")
+									path(d="M368,0H144c-26.4,0-48,21.6-48,48v416c0,26.4,21.6,48,48,48h224c26.4,0,48-21.6,48-48V48C416,21.6,394.4,0,368,0z M192,24 h128v16H192V24z M256,480c-17.673,0-32-14.327-32-32s14.327-32,32-32s32,14.327,32,32S273.673,480,256,480z M384,384H128V64h256 V384z", fill="#727272")
+							.contact-details
+								h5.contact-details__title Call Us
+								p
+									a(href='tel:+919654089096') +91 - 9654089096
+						.contact-content
+							.contact-icon
+								svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 510 510")
+									path(d="M459,51H51C22.95,51,0,73.95,0,102v306c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V102 C510,73.95,487.05,51,459,51z M459,408h-51V183.6l-153,96.9l-153-96.9V408H51V102h30.6L255,209.1L428.4,102H459V408z", fill="#727272")
+							.contact-details
+								h5.contact-details__title Enquiries
+								p info@grynow.com
+						.social-links
+							.google_link.sclink
+								a(href='')
+									svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 455.73 455.73")
+										path(d="M0,0v455.73h455.73V0H0z M265.67,247.037c-7.793,51.194-45.961,80.543-95.376,80.543 c-55.531,0-100.552-45.021-100.552-100.552c0-55.517,45.021-100.538,100.552-100.538c26.862,0,50.399,9.586,67.531,26.226 l-28.857,28.857c-9.773-9.846-23.147-15.094-38.674-15.094c-32.688,0-59.189,27.874-59.189,60.548 c0,32.703,26.501,59.768,59.189,59.768c27.397,0,48.144-13.243,54.129-39.758h-54.129v-40.38h95.131 c1.142,6.506,1.72,13.315,1.72,20.37C267.144,234.025,266.638,240.69,265.67,247.037z M386.419,234.517h-35.233v35.218H326.16 v-35.218h-35.233v-25.041h35.233v-35.233h25.026v35.233h35.233V234.517z", fill="#727272")
+							.facebook_link.sclink
+								a(href='')
+									svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 512 512")
+										path(d="M448,0H64C28.704,0,0,28.704,0,64v384c0,35.296,28.704,64,64,64h192V336h-64v-80h64v-64c0-53.024,42.976-96,96-96h64v80 h-32c-17.664,0-32-1.664-32,16v64h80l-32,80h-48v176h96c35.296,0,64-28.704,64-64V64C512,28.704,483.296,0,448,0z", fill="#727272")
+							.twitter_link.sclink
+								a(href='')
+									svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 510 510")
+										path(d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z M400.35,186.15c-2.55,117.3-76.5,198.9-188.7,204C165.75,392.7,132.6,377.4,102,359.55c33.15,5.101,76.5-7.649,99.45-28.05 c-33.15-2.55-53.55-20.4-63.75-48.45c10.2,2.55,20.4,0,28.05,0c-30.6-10.2-51-28.05-53.55-68.85c7.65,5.1,17.85,7.65,28.05,7.65 c-22.95-12.75-38.25-61.2-20.4-91.8c33.15,35.7,73.95,66.3,140.25,71.4c-17.85-71.4,79.051-109.65,117.301-61.2 c17.85-2.55,30.6-10.2,43.35-15.3c-5.1,17.85-15.3,28.05-28.05,38.25c12.75-2.55,25.5-5.1,35.7-10.2 C425.85,165.75,413.1,175.95,400.35,186.15z", fill="#727272")
+							.instagram_link.sclink
+								a(href='')
+									svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 169.063 169.063")
+										path(d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752 c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407 c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752 c17.455,0,31.656,14.201,31.656,31.655V122.407z", fill="#727272")
+										path(d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561 C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561 c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z", fill="#727272")
+										path(d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78 c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78 C135.661,29.421,132.821,28.251,129.921,28.251z", fill="#727272")
+							.linkedin_link.sclink
+								a(href='')
+									svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 430.117 430.118")
+										path(d="M398.355,0H31.782C14.229,0,0.002,13.793,0.002,30.817v368.471 c0,17.025,14.232,30.83,31.78,30.83h366.573c17.549,0,31.76-13.814,31.76-30.83V30.817C430.115,13.798,415.904,0,398.355,0z M130.4,360.038H65.413V165.845H130.4V360.038z M97.913,139.315h-0.437c-21.793,0-35.92-14.904-35.92-33.563 c0-19.035,14.542-33.535,36.767-33.535c22.227,0,35.899,14.496,36.331,33.535C134.654,124.415,120.555,139.315,97.913,139.315z M364.659,360.038h-64.966V256.138c0-26.107-9.413-43.921-32.907-43.921c-17.973,0-28.642,12.018-33.327,23.621 c-1.736,4.144-2.166,9.94-2.166,15.728v108.468h-64.954c0,0,0.85-175.979,0-194.192h64.964v27.531 c8.624-13.229,24.035-32.1,58.534-32.1c42.76,0,74.822,27.739,74.822,87.414V360.038z M230.883,193.99 c0.111-0.182,0.266-0.401,0.42-0.614v0.614H230.883z", fill="#727272")
+		include footer
+	script(src='/javascripts/contact.js')

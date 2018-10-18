@@ -1,0 +1,25 @@
+.section-stats {
+  color: $color-primary-dark;
+  background-color: #fdfdfd;
+  padding: 10rem 0;
+  box-shadow: 0 0.1rem 0.3rem rgba(black, 0.4);
+  font-size: 2.4rem;
+}
+
+.stats-info {
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+
+  &--3 {
+    grid-row: 2 / -1;
+    grid-column: 1 / -1;
+  }
+  & span {
+    display: block;
+    color: $color-primary;
+    font-size: $font-size-xlarge;
+  }
+}

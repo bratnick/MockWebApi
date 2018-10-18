@@ -1,0 +1,41 @@
+{
+  "title": "GRYNOW",
+  "index": {
+    "tagline1": "YOUR BRAND",
+    "tagline2": "OUR RESPONSIBILITY",
+    "brand": "BRAND",
+    "creator": "CREATOR",
+    "title_abt_infl": "Influence Experts",
+    "title_abt_brand": "Brand Experts",
+    "abt_content_info_infl": "Instagram has become the leading platform for creativity and influence GryNow has focused solely on instagram since 2077, giving you unparalleled insights and knowledge from working with India's most demanded brands and talented creators",
+    "abt_content_info_brand": "Brand has become the leading platform for creativity and influence GryNow has focused solely on instagram since 2077, giving you unparalleled insights and knowledge from working with India's most demanded brands and talented creators",
+    "info_abt_1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "info_abt_2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "info_abt_3": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "info_abt_4": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "info_abt_5": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "stats_info_1": "Hand Picked Influencers",
+    "stats_info_2": "Brands we worked with",
+    "stats_info_3": "Audience Reached",
+    "join_brand": "Join as a Brand",
+    "join_creator": "Join as a Creator"
+  },
+  "header": {
+    "login": "LOGIN",
+    "join_now": "JOIN NOW",
+    "brand": "BRAND",
+    "creator": "CREATOR",
+    "about_us": "ABOUT US",
+    "contact_us": "CONTACT US"
+  },
+  "footer": {
+    "platform": "Platform",
+    "creators": "Creators",
+    "brands": "Brands",
+    "community": "Community",
+    "resources": "Resources",
+    "help": "Help",
+    "support": "Support",
+    "terms_of_use": "Terms of Use"
+  }
+}

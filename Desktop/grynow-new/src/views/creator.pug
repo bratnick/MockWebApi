@@ -1,0 +1,228 @@
+extends base
+
+block links
+	link(rel='stylesheet' type='text/css' href='/stylesheets/creator.css')
+	//- link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css")
+	script(src='/javascripts/creator.js')
+block body
+	#app
+		//- include header
+		.header_top
+			.logo_box
+				a(href="/")
+					| GRYNOW
+			.navbar
+				.nav_links
+					.nav_link
+						a(href='#')
+							| BRAND
+					.nav_link
+						a(href='#')
+							| CREATOR
+					.nav_link
+						a(href='#')
+							| ABOUT US
+					.nav_link
+						a(href='/contact')
+							| CONTACT US
+				.nav_btns
+					.nav_btn.btn_login
+						a(href='#')
+							| LOGIN
+					.nav_btn.btn_signup
+						a(href='#')
+							| JOIN NOW
+		div(style='background-color: blueviolet;color: white;  width: 100%;')
+			.container1
+				.im1
+					img(src='./images/creator/header1.png' style='height: 600px;width: 600px;padding-left: 100px;')
+				.im2
+					#top1
+						p.t2
+							| PAID SPONSORSHIPS ARE
+							br
+							| JUST A TAP AWAY
+							br
+						p.t1
+							| Trust us to connect you with various brands that will
+							br
+							| kickstart your future into the world of paid sponsorships.
+							br
+							| In addition to following your passion, your work can now
+							br
+							| be beautifully intertwined with business. They say
+							br
+							| "never mix business with pleasure", here at Grynow,
+							br
+							| business is pleasure.
+						br
+						br
+						.nav_btn.btn_login
+							a(href='#') Join Now
+					br
+					br
+		br
+		br
+		#top2
+			.container1
+				.im3
+					p.t2.shots
+						| You Call The Shots
+					br
+					p.t1.shots_text
+						| Our prime focus is to redirect like-minded sponsors to
+						br
+						| you, ranging from startups to large conglomerates, we
+						br
+						| help you to reach them, all based on your sole choice.
+						br
+						| You have the freedom to set your own rates and 
+						br
+						| collaborate with amazing brands.
+				.im4
+					img(src='./images/creator/mid1.png' style='border-radius: 10px; height: 350px;width: 470px;padding-right: 100px;')
+		br
+		br
+		div
+			.keyft.card_container
+				.card
+					img(src="./images/creator/keyft_i/kf1.png" style='height:50px; width: 210px; padding-left: 160px;')
+					p.t_in_card
+						b Transparency
+						br
+						| You have full access to all the 
+						br
+						| information relating to your
+						br
+						| deal. You'll know just how
+						br
+						| much the company will pay
+						br
+						| you and nothing will be
+						br
+						| brushed under the rug.
+				.card.card-1
+					img(src="./images/creator/keyft_i/kf2.png" style='height:50px; width: 210px; padding-left: 160px;')
+					p.t_in_card
+						b Work with the best brands
+						br
+						| We have a humongous 
+						br
+						| database of
+						b  50+ Top notch 
+						br
+						b brands. 
+						| All of which would kill
+						br
+						| to work with you! You get
+						br
+						| to decide who you want to work
+						br
+						| with!
+				.card.card-2
+					img(src="./images/creator/keyft_i/kf3.png" style='height:50px; width: 210px; padding-left: 160px;')
+					p.t_in_card
+						b Personalized Dashboard
+						br
+						| Our effortless registration
+						br
+						| process will give ou access
+						br
+						| to your personalized
+						br
+						| dashboard, from which you
+						br
+						| will be able to manage all
+						br
+						| your deals, earnings and
+						br
+						| posts.
+				//- .container2
+					//- .card1
+						.card(style='max-width: 18rem; max-height: 40rem; background-color: #DCD1D1')
+							.card-body.shad
+								p card1-image 
+					//- .card2
+						.card(style='max-width: 18rem; max-height: 40rem; background-color: #DCD1D1')
+							.card-body.shad
+								p card2-image 
+					//- .card3
+						.card.shad(style='max-width: 18rem; max-height: 40rem; background-color: #DCD1D1')
+							.card-body
+								p card3-image
+		br
+		br
+		div
+			p.t3
+				| WONDERING HOW IT WORKS?
+				br
+				| WELL, GETTING STARTED IS PRETTY SIMPLE
+			br
+		
+			.fc_creator
+				img(alt="div1" id="im1" src="./images/flow_creator/c1.png")
+				#text1.sliding_text
+					p(style="color:white;")
+						b REGISTOR ON OUR PLATFORM
+						br
+						| Follow our effortless registration and create an account in no time. Fill up your 
+						| particulars and we'll take it from there. We'll assist you in finding the perfect platform
+						| and superlative brand.
+
+				img(src="./images/flow_creator/arrow.png" style="position: absolute; left: 49%; top: 15%;")
+				img(alt="div2" src="./images/flow_creator/c2.png" style="position: absolute; height: 100px; left: 55.55%; top: 19.2%;")
+				#text2.sliding_text-alt
+					p(style="color:white;")
+						b SET YOUR PRIORITIES
+						br
+						| You get to decide what kind of product you would like to endorse, your preferred method of 
+						| endorsement and choice of platform. You're in the driver's seat!
+				img(alt="div3" src="./images/flow_creator/c3.png" id="im3")
+				#text3.sliding_text
+					p(style="color:white;")
+						b CHOOSE THE BEST SPONSORS
+						br
+						| Choose from a wide range of brands and products that best suit your field of expertise.
+						| You can count on us to provide you with only the best!
+						
+				img(alt="div4" src="./images/flow_creator/c4.png" style="position: absolute; height: 85px; left: 56.22%; top: 53%;")
+				#text4.sliding_text-alt
+					p(style="color:white;")
+						b STRIKE A DEAL
+						br
+						| After selecting your brand start sending your proposal and the type of endorsement you will
+						| create along with the fee that you charge for the promotion. Also mention the details
+						| of what deliverables you expect from that brand.
+				img(alt="div5" src="./images/flow_creator/c5.png" style="position: absolute; height: 85px; left: 50%; top: 75%;")
+				#text5.sliding_text
+					p(style="color:white;")
+						b GET PAID
+						br
+						| The money's here, honey! Now that your deal has been finalized all that's left to do, is for you to 
+						| get paid. You will recieve your payment by your preferred method i.e. cash, cheque, etc.
+						| The choice is all yours. 
+				//- .div1	
+		hr
+		br
+		p.joc_heading
+			| Join Our Community
+		br
+		p.joc_content
+			| Join our ever increasing community of 
+			b 5000+ infulencers 
+			| and 
+			b 50+ brands
+			| . Once you're a
+			br
+			| part of this family, you can forget all your sponsorships worries. Join hands with us today and
+			br
+			| grow to heights you've always dreamed of.
+		br
+		br
+		br
+		br
+		br
+		br
+
+			//- img(src='./images/creator/ver_trans.png' style='padding-left: 200px; height: 500px;width: 1000px;')
+		include footer

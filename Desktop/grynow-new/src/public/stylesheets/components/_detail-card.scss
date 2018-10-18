@@ -1,0 +1,61 @@
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background: rgba($color: #828282, $alpha: 0.5);
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  background-position: top;
+  z-index: 3;
+  transition: all 0.2s;
+}
+
+.detail-card {
+  width: 22%;
+  height: 44%;
+  background: $white;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.1rem 0.3rem rgba($color: black, $alpha: 0.4);
+  opacity: 0;
+  color: $grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  transition: all 0.4s;
+
+  &--left {
+    position: fixed;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &--right {
+    position: fixed;
+    right: 40%;
+    top: 50%;
+    transform: translate(50%, -50%);
+  }
+
+  &--title {
+    padding: 0.8rem 0 0 0;
+    font-size: 3.2rem;
+    text-align: center;
+  }
+
+  &--subtitle {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  &--abt {
+    padding: 2.4rem 1.6rem;
+    text-align: center;
+  }
+}
+
+.show {
+  opacity: 1;
+}

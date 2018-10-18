@@ -1,0 +1,96 @@
+extends base
+
+block links
+	title= strings.title 
+	link(rel='stylesheet' type='text/css' href='/stylesheets/index.css')
+	//- script(src='/javascripts/index.js')
+
+block body
+	#app
+		.header_full
+			include header
+			.header_content
+				h1.tagline
+					span.tl1= strings.index.tagline1
+					span.tl2= strings.index.tagline2
+				.header_btn_grp.btn_grp_animated
+					a.btn.btn_white(href='#')= strings.index.brand
+					a.btn.btn_transparent(href='#')= strings.index.creator
+		main.container
+			section.section-abt
+				.content-container
+					h2.title-abt= strings.index.title_abt_infl
+					.abt-content
+						.abt-content-info= strings.index.abt_content_info_infl
+						.composition
+							img.composition__photo.composition__photo--p1(src='./images/infl/i1.jpg', alt='infl')
+							img.composition__photo.composition__photo--p2(src='./images/infl/i2.jpg', alt='infl')
+							img.composition__photo.composition__photo--p3(src='./images/infl/i3.jpg', alt='infl')
+							img.composition__photo.composition__photo--p4(src='./images/infl/i4.png', alt='infl')
+							img.composition__photo.composition__photo--p5(src='./images/infl/i5.jpg', alt='infl')
+			section.section-abt
+				.content-container
+					h2.title-abt= strings.index.title_abt_brand
+					.abt-content
+						.composition
+							img.composition__photo.composition__photo--p1(src='./images/brands/b1.jpg', alt='brand')
+							img.composition__photo.composition__photo--p2(src='./images/brands/b2.png', alt='brand')
+							img.composition__photo.composition__photo--p3(src='./images/brands/b3.png', alt='brand')
+							img.composition__photo.composition__photo--p4(src='./images/brands/b4.png', alt='brand')
+							img.composition__photo.composition__photo--p5(src='./images/brands/b5.jpg', alt='brand')
+						.abt-content-info= strings.index.abt_content_info_brand
+			section.section-info
+				.content-container
+					.info-content
+						.info-pics
+							img.info-pics__photo.info-pics__photo--p1(src='./images/infl/i5.jpg', alt='infl')
+							img.info-pics__photo.info-pics__photo--p2(src='./images/brands/b5.jpg', alt='brand')
+						.info-abt= strings.index.info_abt_1
+					.info-content
+						.info-abt.info-abt__alt= strings.index.info_abt_2
+						.info-pics
+							img.info-pics__photo.info-pics__photo--p2(src='./images/brands/b4.png', alt='brand')
+							img.info-pics__photo.info-pics__photo--p1.info-pics__photo--p1-alt(src='./images/infl/i4.png', alt='infl')
+					.info-content
+						.info-pics
+							img.info-pics__photo.info-pics__photo--p1(src='./images/infl/i3.jpg', alt='infl')
+							img.info-pics__photo.info-pics__photo--p2(src='./images/brands/b3.png', alt='brand')
+						.info-abt= strings.index.info_abt_3
+					.info-content
+						.info-abt.info-abt__alt= strings.index.info_abt_4
+						.info-pics
+							img.info-pics__photo.info-pics__photo--p2(src='./images/brands/b2.png', alt='brand')
+							img.info-pics__photo.info-pics__photo--p1.info-pics__photo--p1-alt(src='./images/infl/i2.jpg', alt='infl')
+					.info-content
+						.info-pics
+							img.info-pics__photo.info-pics__photo--p1(src='./images/infl/i1.jpg', alt='infl')
+							img.info-pics__photo.info-pics__photo--p2(src='./images/brands/b1.jpg', alt='brand')
+						.info-abt= strings.index.info_abt_5
+			section.section-stats
+				.content-container.stats-info
+					.stats-info--1
+						span.count(firsttime='0', data-count='25000')
+							| 25000
+						| Hand Picked Influencers
+					.stats-info--2
+						span.count(firsttime='0', data-count='500')
+							| 500
+						| Brands we worked with
+					.stats-info--3
+						span.count(firsttime='0', data-count='150000000')
+							| 150000000
+						| Audience Reached
+		.join
+			.content-container.join-options
+				.join-option.join-option--creator
+					a(href='#')= strings.index.join_creator
+						svg.icon-ra(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 612.02 612.02')
+							path(d='M596.96,269.674L342.381,15.094c-20.079-20.079-52.644-20.079-72.723,0c-20.079,20.079-20.079,52.644,0,72.723     L487.852,306.01L269.658,524.202c-20.079,20.079-20.079,52.644,0,72.723s52.644,20.079,72.723,0L596.96,342.346     C617.039,322.317,617.039,289.753,596.96,269.674z M290.858,254.258L88.744,41.238c-20.309-21.378-53.204-21.378-73.513,0     s-20.309,56.058,0,77.462l165.371,174.289L15.231,467.278c-20.309,21.379-20.309,56.083,0,77.462s53.204,21.379,73.513,0     L290.858,331.72C311.167,310.342,311.167,275.662,290.858,254.258z', fill='#ffffff')
+				.divider
+					.divider-line
+				.join-option.join-option--brand
+					a(href='#')= strings.index.join_brand
+						svg.icon-ra(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 612.02 612.02')
+							path(d='M596.96,269.674L342.381,15.094c-20.079-20.079-52.644-20.079-72.723,0c-20.079,20.079-20.079,52.644,0,72.723     L487.852,306.01L269.658,524.202c-20.079,20.079-20.079,52.644,0,72.723s52.644,20.079,72.723,0L596.96,342.346     C617.039,322.317,617.039,289.753,596.96,269.674z M290.858,254.258L88.744,41.238c-20.309-21.378-53.204-21.378-73.513,0     s-20.309,56.058,0,77.462l165.371,174.289L15.231,467.278c-20.309,21.379-20.309,56.083,0,77.462s53.204,21.379,73.513,0     L290.858,331.72C311.167,310.342,311.167,275.662,290.858,254.258z', fill='#ffffff')
+		include footer
+	script(src='/javascripts/index.js')

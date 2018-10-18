@@ -1,0 +1,109 @@
+extends base
+
+block links
+	link(rel='stylesheet' type='text/css' href='/stylesheets/brand.css')
+	//- link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css")
+	script(src='/javascripts/brand.js')
+block body
+	#app
+		//- include header
+		.header_top
+			.logo_box
+				a(href="/")
+					| GRYNOW
+			.navbar
+				.nav_links
+					.nav_link
+						a(href='#')
+							| BRAND
+					.nav_link
+						a(href='#')
+							| CREATOR
+					.nav_link
+						a(href='#')
+							| ABOUT US
+					.nav_link
+						a(href='/contact')
+							| CONTACT US
+				.nav_btns
+					.nav_btn.btn_login
+						a(href='#')
+							| LOGIN
+					.nav_btn.btn_signup
+						a(href='#')
+							| JOIN NOW
+		div(style='background-color: blueviolet;color: white;  width: 100%;')
+			.container1
+				.im1
+					img(src='./images/brand-page/1.png' style='height: 600px;width: 650px;padding-right: 100px;')
+				.im2
+					#top1
+						p.t2
+							| THE 100% VETTED INFLUENCER MARKETING SOLUTION
+						p.t1
+							| DRIVE SUCCESSFULL CAMPAIGNS WITH
+							br
+							| SUCCESSFUL INFLUENCER INSIGHTS,
+							br
+						p.t1
+							| HARD-SURATED DATA AND THE INDUSTRY&apos;S.
+							br
+							| MOST TRUSTED END TO END INFLUENCER
+							br
+							| MARKETING SOLUTION
+						br
+						br
+						.nav_btn.btn_login
+							a(href='#') Button
+					br
+					br
+		br
+		br
+		#top2
+			.container1.tc1
+				.im3
+					p.t2
+						| WANT TO TELL YOU A BRAND STORY?
+						br
+						| HERES YOUR CHANCE!
+					p.t1
+						| Want a million of people to learn 
+						br
+						| your brand? You&apos;re in right place.
+						br
+						| Creators are this generation&apos;s storytellers
+						br
+						| telling product stories in a way that no
+						br
+						| one else can.Their audience trust them
+				.im4
+					img(src='./images/brand-page/2-1.png' style='height: 400px;width: 500px;padding-right: 80px;')
+		br
+		br
+		div
+			.keyft
+				p Key Features
+				br
+				.container
+					.card1
+						.card(style='max-width: 18rem; max-height: 40rem; background-color: #DCD1D1')
+							.card-body.shad
+								p card1-image 
+					.card2
+						.card(style='max-width: 18rem; max-height: 40rem; background-color: #DCD1D1')
+							.card-body.shad
+								p card2-image 
+					.card3
+						.card.shad(style='max-width: 18rem; max-height: 40rem; background-color: #DCD1D1')
+							.card-body
+								p card3-image
+		br
+		br
+		div
+			p.t3
+				| WONDERING HOW IT WORKS?
+				br
+				| WELL, GETTING STARTED IS PRETTY SIMPLE
+		.f1
+			img(src='./images/creator/ver_trans.png' style='padding-left: 200px; height: 500px;width: 1000px;')
+		include footer
